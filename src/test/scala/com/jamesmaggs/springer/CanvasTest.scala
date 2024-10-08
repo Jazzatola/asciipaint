@@ -1,9 +1,8 @@
 package com.jamesmaggs.springer
 
-import org.scalatest.{Matchers, FunSuite}
 import CanvasMatchers._
 
-class CanvasTest extends FunSuite with Matchers {
+class CanvasTest extends UnitSuite {
 
   test("draw an empty canvas") {
     val output = "-----\n" +

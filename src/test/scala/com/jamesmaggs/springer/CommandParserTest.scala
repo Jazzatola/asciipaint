@@ -1,8 +1,6 @@
 package com.jamesmaggs.springer
 
-import org.scalatest.{FunSuite, Matchers}
-
-class CommandParserTest extends FunSuite with Matchers {
+class CommandParserTest extends UnitSuite {
 
   val parser = CommandParser
 

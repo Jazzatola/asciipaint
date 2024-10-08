@@ -1,8 +1,6 @@
 package com.jamesmaggs.springer
 
-import org.scalatest.{Matchers, FunSuite}
-
-class BucketFillTest extends FunSuite with Matchers {
+class BucketFillTest extends UnitSuite {
 
   private val current = Canvas(3, 3)
 

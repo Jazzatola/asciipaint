@@ -1,8 +1,6 @@
 package com.jamesmaggs.springer
 
-import org.scalatest.{FunSuite, Matchers}
-
-class DrawRectangleTest extends FunSuite with Matchers {
+class DrawRectangleTest extends UnitSuite {
 
    private val current = Canvas(5, 5)
 

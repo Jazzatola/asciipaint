@@ -1,8 +1,6 @@
 package com.jamesmaggs.springer
 
-import org.scalatest.{Matchers, FunSuite}
-
-class IOTest extends FunSuite with Matchers {
+class IOTest extends UnitSuite {
 
   test("represents deferred effects") {
     var evaluated = false
