@@ -1,4 +1,4 @@
-package com.jamesmaggs.springer
+package com.jamesmaggs.asciipaint
 
 class BucketFillTest extends UnitSuite {
 

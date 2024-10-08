@@ -1,4 +1,4 @@
-package com.jamesmaggs.springer
+package com.jamesmaggs.asciipaint
 
 import org.scalatest.funsuite._
 import org.scalatest.matchers.should._

@@ -1,4 +1,4 @@
-package com.jamesmaggs.springer
+package com.jamesmaggs.asciipaint
 
 trait IO[A] { self =>
   def run: A

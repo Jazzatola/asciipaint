@@ -1,6 +1,6 @@
-package com.jamesmaggs.springer
+package com.jamesmaggs.asciipaint
 
-import com.jamesmaggs.springer.Canvas._
+import com.jamesmaggs.asciipaint.Canvas._
 
 object Canvas {
   val blank = ' '

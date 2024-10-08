@@ -1,6 +1,6 @@
-package com.jamesmaggs.springer
+package com.jamesmaggs.asciipaint
 
-import com.jamesmaggs.springer.Command._
+import com.jamesmaggs.asciipaint.Command._
 
 import scala.util.Try
 

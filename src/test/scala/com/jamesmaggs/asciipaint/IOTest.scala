@@ -1,4 +1,4 @@
-package com.jamesmaggs.springer
+package com.jamesmaggs.asciipaint
 
 class IOTest extends UnitSuite {
 

@@ -1,8 +1,8 @@
-import sbt.Keys._
+import sbt.Keys.*
 
 lazy val root = (project in file(".")).
   settings(
-    name := "springer",
+    name := "asciipaint",
     version := "1.0",
     scalaVersion := "3.5.1"
   )

@@ -1,4 +1,4 @@
-package com.jamesmaggs.springer
+package com.jamesmaggs.asciipaint
 
 object Main {
   def main(args: Array[String]): Unit = {
