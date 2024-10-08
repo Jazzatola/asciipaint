@@ -1,0 +1,14 @@
+
+# Sbt
+project
+target
+.bsp
+
+# IntelliJ
+.idea
+*.iml
+*.ipr
+*.iws
+
+# Mac OS
+.DS_Store
