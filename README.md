@@ -1,17 +1,25 @@
-# Springer Code Problem Notes
+# Ascii Drawing Program
 
-## Implementation
+This is a simple console version of a drawing program. It works as follows:
 
-I decided to try and implement the solution using a purely functional approach. This is something I am still learning after spending most of my career doing OO development.
+1. create a new canvas
+1. start drawing on the canvas by issuing various commands
+1. quit
 
-As a consequence of this, I wrote my own, minimal implementation of the IO monad to handle purely functional interaction with the user. Unfortunately, my recursive implementation for the repl loop would cause the stack to overflow if the program was used for long enough. A more robust implementation could use continuation passing to avoid this. In most situations I would use the scalaz library rather than roll my own.
+The program supports the following commands.
 
-As for the canvas, although the commands entered by the user are expressed in terms of width, height and 1-based co-ordinates, I decided to use a more natural 0-based implementation for the drawing operations. This led to some fairly ugly conversion of user input into function calls on the canvas. Also, I’m sure there are more efficient algorithms for drawing, filling and representing the grid but I’m happy with how the use of a one-dimensional array turned out.
+## Command Description
 
-## Error Handling
+`C w h` Should create a new canvas of width `w` and height `h`.
 
-I chose to avoid error handling in my implementation by making the program ignore invalid input. This keeps the implementation simple but results in a poor user experience. There is no feedback if the user enters an invalid command or tries to fill the canvas with the line character, etc.
+`L x1 y1 x2 y2`
+Should create a new line from `(x1,y1)` to `(x2,y2)`. Currently only horizontal or vertical lines are supported. Horizontal and vertical lines will be drawn using the `x`
+character.
 
-## Testing
+`R x1 y1 x2 y2` Should create a new rectangle, whose upper left corner is `(x1, y1)` and lower right
+corner is `(x2, y2)`. Horizontal and vertical lines will be drawn using the `x` character.
 
-I opted for xUnit style tests but for (at least) the IO implementation, property based testing would be more appropriate. This could be used to verify the IO implementation satisfies the monad laws but as mentioned above, it is probably better to choose a third party implementation like scalaz.
+`B x y c` Should fill the entire area connected to `(x, y)` with "colour" `c`. The behaviour of this is
+the same as that of the _bucket fill_ tool in paint programs.
+
+`Q` Should quit the program.
